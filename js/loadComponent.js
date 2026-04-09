@@ -7,5 +7,7 @@ function loadComponent(id, file) {
 }
 
 // panggil component
-loadComponent("navbar", "../components/navbar.html");
-loadComponent("footer", "../components/footer.html");
+loadComponent("navbar", "components/navbar.html");
+loadComponent("footer", "components/footer.html");
+loadComponent("hero", "components/hero.html");
+loadComponent("home_content", "components/home_content.html");
