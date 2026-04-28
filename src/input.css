@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .dot-pattern {
+        @apply pointer-events-none absolute w-full opacity-60;
+        background-image: radial-gradient(#8C1C13 1.5px, transparent 1px);
+        background-size: 20px 20px;
+    }
+
+    .bg-dot-pattern {
+        @apply bg-cardSection;
+        background-image: radial-gradient(#2A2A2A 2px, transparent 0px);
+        background-size: 20px 20px;
+    }
+
+    .glass-box {
+        @apply relative pointer-events-auto bg-black/10 rounded-full backdrop-blur-sm border border-white/20;
+    }
+}
