@@ -5,7 +5,14 @@ module.exports = {
   content: [
     "./*.html",
     "./components/**/*.html",
-    "./js/**/*.js",],
+    "./js/**/*.js",
+  ],
+  safelist: [
+    'border-t-emphasisColor',
+    'border-t-neutralColor',
+    'border-t-overlayHero',
+    'border-t-important',
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -25,6 +32,7 @@ module.exports = {
         // Ui color 
         primaryUi: '#1F3A5F',
         important: '#D97904',
+        hoverImportant: '#a55d06',
 
         // Aksen color
         neutralColor: '#4A6F46',

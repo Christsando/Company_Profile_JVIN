@@ -2,45 +2,92 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
+
     <!-- translate tailwind to css -->
     <link rel="stylesheet" href="dist/output.css">
+
+    <!-- business logo -->
+    <link rel="icon" href="assets/images/company_logo.png" type="image/png" />
+
+    <!-- website title -->
+    <title>Contact | CV Java Indo Nusantara</title>
 </head>
 
 <body class="bg-gray-200">
 
-    <!-- Hero content -->
-    <div class="relative">
-        <!-- Background image hero -->
-        <img src="assets/images/hero_background.png" class="w-full h-screen object-cover object-center" />
+    <!-- Hero container -->
+    <header class="relative h-[300px] bg-cover bg-center"
+        style="background-image: url('assets/images/hero_background.png');">
 
-        <!-- Hero content -->
-        <div class="absolute top-0 left-0 w-full">
-            <!-- Navbar -->
+        <!-- content section -->
+        <div class="flex gap-20 px-10 md:px-28 flex min-h-screen py-8 md:py-10 flex-col">
+            <!-- content -->
             <div id="navbar"></div>
-    
-            <!-- Quote and Company Logo-->
-            <div class="flex justify-between px-28 text-white font-lato text-4xl">
-                <h2>“Delivering premium charcoal with </br> <span class="font-extrabold text-important">consistent quality</span> for <span class="font-extrabold text-important">global standards.</span>”</h2>
-                <img src="assets/images/company_logo.png" alt="company_logo" class="w-20 h-20 object-cover object-center"/>
-            </div>
-
-            <!-- Our truster section -->
-            <div class="">
-                
-                <div>
-
-                </div>
+            <div class="text-white font-lato text-2xl lg:text-4xl font-bold">
+                <h1>Contact</h1>
             </div>
         </div>
-    </div>
+
+
+        <div class="absolute -bottom-4 left-0 w-full">
+            <div class="dot-pattern h-20"></div>
+            <div class="px-8 md:px-28 flex gap-4 translate-y-3.5">
+                <div class="glass-box w-24 h-14 sm:w-40 md:w-[400px] md:h-14"></div>
+                <div class="glass-box w-20 h-14 sm:w-18 md:w-40 md:h-14"></div>
+                <div class="glass-box w-14 h-14 sm:w-14 md:w-20 md:h-14"></div>
+                <div class="glass-box w-8 h-14 sm:w-10 md:w-10 md:h-14"></div>
+                <div class="glass-box w-4 h-14 sm:w-4 md:w-8 md:h-14"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <main class="relative flex justify-center z-50">
+        <div class="main-content-container">
+            <h1 class="animate-slide-left text-important detail-page-title py-5">CONTACT</h1>
+            <div class="flex md:flex-row flex-col gap-10 md:gap-20 lg:gap-32 items-center">
+                <!-- company description -->
+                <div class="animate-slide-left">
+                    <h1 class="section-title text-black">CV Java Indo Nusantara</h1>
+                    <p class="description-text mt-4 mb-4">We are pleased to welcome our future cooperation or answer
+                        your questions about our company.
+                        Please contact our team to assist you as soon as possible.</p>
+                    <ul class="flex gap-1 flex-col description-text">
+                        <li><a href="https://maps.google.com/?q=Klampeyan, Noborejo Argomulyo, Salatiga"
+                                target="_blank"><i class="fas fa-location mr-2"></i>Klampeyan, Noborejo Argomulyo,
+                                Salatiga</a></li>
+                        <li><a href="https://wa.me/6281234716262 " target="_blank"><i
+                                    class="fab fa-whatsapp mr-2"></i>+628-1234-7162-62 (Nano)</a></li>
+                        <li><a href="mailto:cvjavaindonusantara@gmail.com"><i
+                                    class="fas fa-envelope mr-2"></i>cvjavaindonusantara@gmail.com</a></li>
+                    </ul>
+                </div>
+                <img src="assets/images/factory/factory_building.png"
+                    class="w-[400px] h-[250px] rounded-md animate-slide-right" alt="factory" />
+            </div>
+        </div>
+    </main>
+
+    <a href="https://wa.me/6281234716262 " target="_blank"
+        class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg transition-colors duration-200">
+        <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+    </a>
 
     <div id="footer"></div>
+
+    <!-- script -->
+    <script src="js/components.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/loadComponent.js"></script>
 </body>
 
