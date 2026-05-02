@@ -1,5 +1,5 @@
-<footer class="bg-cardSection py-10">
-    <div class="px-28 grid grid-cols-5 gap-4">
+<footer class="bg-cardSection py-16">
+    <div class="px-10 lg:px-28 grid grid-cols-2 lg:grid-cols-5 gap-4">
 
         <!-- company footer -->
         <div class="col-span-2 text-white">
@@ -17,41 +17,48 @@
                 CV.JAVA INDO NUSANTARA provides briquette according to customers specification requirement in size
                 and shape.
             </p>
+            
 
-            <p class="leading-loose text-sm mt-4">
-                <i class="fas fa-location mr-2"></i>
-                Klampeyan, Noborejo Argomulyo, Salatiga
-            </p>
+            <a href="https://maps.google.com/?q=Klampeyan, Noborejo Argomulyo, Salatiga" target="_blank" class="footer-link">
+                <p class="tracking-wider text-sm mt-4">
+                    <i class="fas fa-location mr-2"></i>
+                    Klampeyan, Noborejo Argomulyo, Salatiga
+                </p>
+            </a>
         </div>
 
         <!-- quick lines -->
-        <div class="col-span-1 text-white ml-8">
+        <div class="col-span-1 text-white lg:ml-8">
             <h1 class="font-semibold">QUICK LINES</h1>
-            <ul class="flex flex-col gap-4 text-sm mt-4">
-                <li><a>HOME</a></li>
-                <li><a>PRODUCTS</a></li>
-                <li><a>ABOUT US</a></li>
-                <li><a>CONTACT</a></li>
-                <li><a>TUJUAN EKSPOR</a></li>
+            <ul class="flex flex-col gap-4 mt-4">
+                <li class="footer-link"><a href="index.html">HOME</a></li>
+                <li class="footer-link"><a href="products.html">PRODUCTS</a></li>
+                <li class="footer-link"><a href="about_us.html">ABOUT US</a></li>
+                <li class="footer-link"><a href="contact.html">CONTACT</a></li>
+                <!-- <li><a>TUJUAN EKSPOR</a></li> -->
             </ul>
         </div>
 
         <!-- products -->
-        <div class="col-span-1 text-white">
-            <h1 class="font-semibold">QUICK LINES</h1>
+        <div class="hidden lg:flex lg:flex-col col-span-1 text-white">
+            <h1 class="font-semibold">PRODUCTS</h1>
             <ul class="flex flex-col gap-4 text-sm mt-4">
-                <li><a>CUBE FOR SISHA</a></li>
-                <li><a>HEXAGONAL FOR SISHA</a></li>
+                <li class="footer-link"><a href="product-hexagonal.html">HEXAGONAL FOR SISHA</a></li>
+                <li class="footer-link"><a href="product-cube.html">CUBE FOR SISHA</a></li>
             </ul>
         </div>
 
-        <!-- products -->
+        <!-- contact -->
         <div class="col-span-1 text-white">
-            <h1 class="font-semibold">QUICK LINES</h1>
+            <h1 class="font-semibold">CONTACT</h1>
             <ul class="flex flex-col gap-4 text-sm mt-4">
-                <li><a><i class="fab fa-whatsapp mr-2"></i>+628-1234-7162-62 (Nano)</a></li>
-                <li><i class="fas fa-envelope mr-2"></i><a>cvjavaindonusantara@gmail.com</a></li>
+                <li class="footer-link"><i class="fab fa-whatsapp mr-2"></i><a href="https://wa.me/6281234716262" target="_blank">+628-1234-7162-62 (Nano)</a></li>
+                <li class="footer-link"><i class="fas fa-envelope mr-2"></i><a href="mailto:cvjavaindonusantara@gmail.com">cvjavaindonusantara@gmail.com</a></li>
             </ul>
+        </div>
+
+        <div class="col-span-2 lg:col-span-5 flex items-center justify-center mt-12">
+            <h1 class="text-white font-lato font-bold">© 2026 CV. JAVA INDO NUSANTARA</h1>
         </div>
     </div>
 </footer>

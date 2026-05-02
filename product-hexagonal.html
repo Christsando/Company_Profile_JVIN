@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- translate tailwind to css -->
+    <link rel="stylesheet" href="dist/output.css">
+
+    <!-- business logo -->
+    <link rel="icon" href="assets/images/company_logo.png" type="image/png" />
+
+    <!-- website title -->
+    <title>Products | CV Java Indo Nusantara</title>
+</head>
+
+<body class="bg-gray-200">
+
+    <!-- Hero container -->
+    <header class="relative h-[300px] bg-cover bg-center"
+        style="background-image: url('assets/images/hero_background.png');">
+
+        <!-- content section -->
+        <div class="flex gap-20 px-10 md:px-28 flex min-h-screen py-8 md:py-10 flex-col">
+            <!-- content -->
+            <div id="navbar"></div>
+            <div class="text-white font-lato text-2xl lg:text-4xl font-bold">
+                <h1><span class="text-important">Hexagonal </span> Sisha</h1>
+            </div>
+        </div>
+
+
+        <div class="absolute -bottom-4 left-0 w-full">
+            <div class="dot-pattern h-20"></div>
+            <div class="px-8 md:px-28 flex gap-4 translate-y-3.5">
+                <div class="glass-box w-24 h-14 sm:w-40 md:w-[400px] md:h-14"></div>
+                <div class="glass-box w-20 h-14 sm:w-18 md:w-40 md:h-14"></div>
+                <div class="glass-box w-14 h-14 sm:w-14 md:w-20 md:h-14"></div>
+                <div class="glass-box w-8 h-14 sm:w-10 md:w-10 md:h-14"></div>
+                <div class="glass-box w-4 h-14 sm:w-4 md:w-8 md:h-14"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <div class="flex justify-center">
+        <div class="main-content-container">
+            <div class="flex items-center relative z-50">
+                <a href="products.html" onclick="if(history.length > 1){ history.back(); return false; }">
+                    <i class="fas fa-circle-chevron-left text-3xl text-important mr-6"></i>
+                </a>
+                <h1 class="text-important detail-page-title py-10">
+                    HEXAGONAL FOR SISHA
+                </h1>
+            </div>
+            <div class="bg-cardSection relative z-50 animate-slide-right">
+
+                <div class="hidden md:grid grid-cols-2">
+                    <div class="flex flex-col gap-10 p-6 text-white">
+                        <p class="description-text text-white">Hexagonal briquettes are designed for longer sessions and
+                            higher efficiency, making them suitable for heavy usage.</p>
+                        <h1 class="font-lato text-2xl text-white">SIZE</h1>
+                        <ul class="description-text text-white">
+                            <li>
+                                <div class="flex justify-between">
+                                    <p>20 x 35 mm</p>
+                                    <p>18 x 50 mm</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between">
+                                    <p>25 x 25 x 50 mm</p>
+                                    <p>18 x 35 mm</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between">
+                                    <p>22 x 42 mm</p>
+                                    <p>20 x 50 mm</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="#">
+                            <button class="button w-[200px]">
+                                ORDER
+                            </button>
+                        </a>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="bg-neutralColor h-full w-4"></div>
+                        <img src="assets/images/products/hexagonal.jpeg" alt="hexagonal for shisa"
+                            class="h-full w-[480px] object-center object-cover" />
+                    </div>
+                </div>
+
+                <!-- phone screen -->
+                <div class="md:hidden">
+                    <div>
+                        <img src="assets/images/products/hexagonal.jpeg" alt="cube for shisa"
+                            class="h-[260px] w-full object-center object-cover" />
+                        <div class="bg-emphasisColor h-4 w-full"></div>
+                    </div>
+
+                    <div class="flex flex-col gap-10 p-6 text-white">
+                        <p class="description-text text-white">Hexagonal briquettes are designed for longer sessions and
+                            higher efficiency, making them suitable for heavy usage.</p>
+                        <h1 class="font-lato text-2xl text-white">SIZE</h1>
+                        <ul class="description-text text-white">
+                            <li>
+                                <div class="flex justify-between">
+                                    <p>20 x 35 mm</p>
+                                    <p>18 x 50 mm</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between">
+                                    <p>25 x 25 x 50 mm</p>
+                                    <p>18 x 35 mm</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex justify-between">
+                                    <p>22 x 42 mm</p>
+                                    <p>20 x 50 mm</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <a href="#">
+                            <button class="button w-[180px]">
+                                ORDER
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <!-- script -->
+    <script src="js/components.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/loadComponent.js"></script>
+</body>
+
+</html>

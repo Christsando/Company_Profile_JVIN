@@ -2,63 +2,60 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
+
     <!-- translate tailwind to css -->
     <link rel="stylesheet" href="dist/output.css">
-    <!-- tailwind script -->
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- business logo -->
     <link rel="icon" href="assets/images/company_logo.png" type="image/png" />
+
     <!-- website title -->
     <title>Home | CV Java Indo Nusantara</title>
 </head>
 
 <body class="bg-gray-200">
 
-    <!-- Hero content -->
-    <div class="relative">
-        <!-- Background image hero -->
-        <img src="assets/images/hero_background.png" class="w-full h-screen object-cover object-center" />
+    <!-- Hero container -->
+    <header class="relative h-screen bg-cover bg-center"
+        style="background-image: url('assets/images/hero_background.png');">
 
-        <!-- Hero content -->
-        <div class="absolute top-0 left-0 w-full px-8 md:px-28">
-            <div class="flex min-h-screen py-4 md:py-10 justify-between flex-col">
-                <!-- Navbar -->
-                <div id="navbar"></div>
-                <!-- Hero -->
-                <div id="hero"></div>
-            </div>
+        <!-- content section -->
+        <div class="px-10 md:px-28 flex min-h-screen py-8 md:py-10 justify-between flex-col">
+            <!-- content -->
+            <div id="navbar"></div>
+            <div id="hero"></div>
         </div>
+    </header>
 
-        <!-- Deecorative -->
-        <div class="dot-pattern bottom-5 h-20"></div>
-        <div class="px-8 md:px-28 flex gap-4 -translate-y-8">
-            <div class="glass-box w-24 h-14 sm:w-40 h-14 md:w-[400px] md:h-14"></div>
-            <div class="glass-box w-20 h-14 sm:w-18 h-14 md:w-40 md:h-14"></div>
-            <div class="glass-box w-14 h-14 sm:w-14 h-14 md:w-20 md:h-14"></div>
-            <div class="glass-box w-8 h-14 sm:w-8 h-14 md:w-10 md:h-14"></div>
-            <div class="glass-box w-4 h-14 sm:w-4 h-14 md:w-8 md:h-14"></div>
-        </div>
-
-    </div>
-
-    <!-- Home content -->
-    <div class="flex flex-col gap-12 py-8 mt-12">
-        <div id="customer-need"></div>
+    <!-- core container -->
+    <main class="flex flex-col gap-12 mt-12 ">
+        <div id="customer-need" class="mt-12"></div>
         <div id="charcoal-process"></div>
         <div id="products" class="mt-14"></div>
         <div id="packaging" class="mt-14"></div>
         <div id="question" class="mt-14"></div>
-    </div>
+        <div id="footer"></div>
+    </main>
 
-    <!-- Footer -->
-    <div id="footer"></div>
+    <a href="https://wa.me/6281234716262 " target="_blank"
+        class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg transition-colors duration-200">
+        <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+    </a>
 
+
+    <!-- script -->
+    <script src="js/components.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/loadComponent.js"></script>
 </body>
 

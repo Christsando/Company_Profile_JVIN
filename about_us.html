@@ -2,45 +2,117 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
+
     <!-- translate tailwind to css -->
     <link rel="stylesheet" href="dist/output.css">
+
+    <!-- business logo -->
+    <link rel="icon" href="assets/images/company_logo.png" type="image/png" />
+
+    <!-- website title -->
+    <title>About Us | CV Java Indo Nusantara</title>
 </head>
 
 <body class="bg-gray-200">
 
-    <!-- Hero content -->
-    <div class="relative">
-        <!-- Background image hero -->
-        <img src="assets/images/hero_background.png" class="w-full h-screen object-cover object-center" />
+    <!-- Hero container -->
+    <header class="relative h-[300px] bg-cover bg-center"
+        style="background-image: url('assets/images/hero_background.png');">
 
-        <!-- Hero content -->
-        <div class="absolute top-0 left-0 w-full">
-            <!-- Navbar -->
+        <!-- content section -->
+        <div class="flex gap-20 px-10 md:px-28 flex min-h-screen py-8 md:py-10 flex-col">
+            <!-- content -->
             <div id="navbar"></div>
-    
-            <!-- Quote and Company Logo-->
-            <div class="flex justify-between px-28 text-white font-lato text-4xl">
-                <h2>“Delivering premium charcoal with </br> <span class="font-extrabold text-important">consistent quality</span> for <span class="font-extrabold text-important">global standards.</span>”</h2>
-                <img src="assets/images/company_logo.png" alt="company_logo" class="w-20 h-20 object-cover object-center"/>
+            <div class="text-white font-lato text-2xl lg:text-4xl font-bold">
+                <h1>About <span class="text-important">Us</span></h1>
             </div>
+        </div>
 
-            <!-- Our truster section -->
-            <div class="">
-                
-                <div>
 
+        <div class="absolute -bottom-4 left-0 w-full">
+            <div class="dot-pattern h-20"></div>
+            <div class="px-8 md:px-28 flex gap-4 translate-y-3.5">
+                <div class="glass-box w-24 h-14 sm:w-40 md:w-[400px] md:h-14"></div>
+                <div class="glass-box w-20 h-14 sm:w-18 md:w-40 md:h-14"></div>
+                <div class="glass-box w-14 h-14 sm:w-14 md:w-20 md:h-14"></div>
+                <div class="glass-box w-8 h-14 sm:w-10 md:w-10 md:h-14"></div>
+                <div class="glass-box w-4 h-14 sm:w-4 md:w-8 md:h-14"></div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- main content -->
+    <main class="flex justify-center relative">
+
+        <!-- decoration -->
+        <div class="absolute dot-pattern right-0 bottom-14 w-[200px] md:w-[300px] h-20 z-20"></div>
+        <div class="absolute dot-pattern left-0 bottom-[970px] md:bottom-[630px] lg:bottom-[570px] w-[200px] md:w-[300px] h-20 z-20"></div>
+
+        <div class="main-content-container">
+            <h1 class="text-important detail-page-title py-5 animate-slide-left animate-slide-left">ABOUT US</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+                <!-- company description -->
+                <div class="animate-slide-left">
+                    <h1 class="section-title text-black ">CV Java Indo Nusantara</h1>
+                    <p class="description-text mt-4 mb-4">CV. JAVA INDO NUSANTARA is a manufacturer and supplier of
+                        premium coconut shell charcoal briquettes. Established in 2025, the company is committed to
+                        delivering high-quality products tailored to meet customer specifications in terms of size,
+                        shape, and packaging.<br><br>
+
+                        We offer flexible solutions, including private label production, custom branding, and packaging
+                        services to support our clients’ business needs. All of our briquettes are made from 100%
+                        natural coconut shell, making them an environmentally friendly and sustainable energy
+                        source.<br><br>
+
+                        Our products are exported to various international markets, including European countries such as
+                        Russia, Germany, France, and Turkey, as well as Middle Eastern countries including Lebanon, the
+                        UAE, and Saudi Arabia. With a production capacity of 8–10 containers per month, we ensure
+                        consistent supply and reliable delivery to our global partners.</p>
+                </div>
+
+                <!-- image -->
+                <div class="ml-20 hidden md:flex items-center">
+                    <div class="relative h-[340px] w-full">
+                        <img src="assets/images/about_us1.png"
+                            class="absolute top-0 left-0 w-[55%] h-[185px] object-cover z-10 animate-slide-right" />
+                        <img src="assets/images/about_us2.png"
+                            class="absolute top-[30px] right-0 w-[55%] h-[210px] object-cover z-20 animate-fade-in" />
+                        <img src="assets/images/about_us3.png"
+                            class="absolute bottom-0 left-[10%] w-[65%] h-[160px] object-cover z-30 animate-slide-left" />
+                    </div>
+                </div>
+
+                <!-- commmitment section -->
+                <h1 class="text-right detail-page-title col-span-2 text-important py-5 animate-slide-right">OUR COMMITMENTS</h1>
+
+                <div class="col-span-2">
+                    <div id="commitment"></div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <a href="https://wa.me/6281234716262 " target="_blank"
+        class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg transition-colors duration-200">
+        <i class="fa-brands fa-whatsapp text-white text-2xl"></i>
+    </a>
 
     <div id="footer"></div>
+
+    <!-- script -->
+    <script src="js/components.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/loadComponent.js"></script>
 </body>
 

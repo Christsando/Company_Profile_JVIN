@@ -2,42 +2,57 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
+
     <!-- translate tailwind to css -->
     <link rel="stylesheet" href="dist/output.css">
+
+    <!-- business logo -->
+    <link rel="icon" href="assets/images/company_logo.png" type="image/png" />
+
+    <!-- website title -->
+    <title>Products | CV Java Indo Nusantara</title>
 </head>
 
 <body class="bg-gray-200">
 
-    <!-- Hero content -->
-    <div class="relative">
-        <!-- Background image hero -->
-        <img src="assets/images/hero_background.png" class="w-full h-screen object-cover object-center" />
+    <!-- Hero container -->
+    <header class="relative h-[300px] bg-cover bg-center"
+        style="background-image: url('assets/images/hero_background.png');">
 
-        <!-- Hero content -->
-        <div class="absolute top-0 left-0 w-full">
-            <!-- Navbar -->
+        <!-- content section -->
+        <div class="flex gap-20 px-10 md:px-28 flex min-h-screen py-8 md:py-10 flex-col">
+            <!-- content -->
             <div id="navbar"></div>
-    
-            <!-- Quote and Company Logo-->
-            <div class="flex justify-between px-28 text-white font-lato text-4xl">
-                <h2>“Delivering premium charcoal with </br> <span class="font-extrabold text-important">consistent quality</span> for <span class="font-extrabold text-important">global standards.</span>”</h2>
-                <img src="assets/images/company_logo.png" alt="company_logo" class="w-20 h-20 object-cover object-center"/>
-            </div>
-
-            <!-- Our truster section -->
-            <div class="">
-                
-                <div>
-
-                </div>
+            <div class="text-white font-lato text-4xl font-bold">
+                <h1><span class="text-important">Our</span> Product Variant's</h1>
             </div>
         </div>
+
+
+        <div class="absolute -bottom-4 left-0 w-full">
+            <div class="dot-pattern h-20"></div>
+            <div class="px-8 md:px-28 flex gap-4 translate-y-3.5">
+                <div class="glass-box w-24 h-14 sm:w-40 md:w-[400px] md:h-14"></div>
+                <div class="glass-box w-20 h-14 sm:w-18 md:w-40 md:h-14"></div>
+                <div class="glass-box w-14 h-14 sm:w-14 md:w-20 md:h-14"></div>
+                <div class="glass-box w-8 h-14 sm:w-10 md:w-10 md:h-14"></div>
+                <div class="glass-box w-4 h-14 sm:w-4 md:w-8 md:h-14"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main content -->
+    <div>
+
     </div>
 
     <div id="footer"></div>
