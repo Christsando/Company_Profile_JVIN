@@ -1,7 +1,7 @@
 // PACKAGING SECTION
 function createCardPackaging({ img, number, title, subtitle, color }) {
     return `
-    <div class="relative w-[200px] h-[280px] md:w-[300px] lg:w-[250px]">
+    <div class="relative w-[180px] h-[280px] md:w-[300px] lg:w-[250px]">
         <img src="${img}" class="w-full h-full object-cover" />
         <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent"></div>
 
@@ -18,7 +18,7 @@ function createCardPackaging({ img, number, title, subtitle, color }) {
             </div>
         </div>
 
-        <div class="absolute top-4 right-4 w-24 md:top-6 md:right-40 md:w-12 lg:top-6 lg:right-14 lg:w-20">
+        <div class="absolute bottom-4 left-4 w-full md:bottom-auto md:top-6 md:right-40 md:w-12 lg:top-6 lg:right-14 lg:w-20">
             <h2 class="text-white text-left text-sm md:text-lg font-bold font-lato">${title}</h2>
             <p class="text-white text-left text-sm font-lato">${subtitle}</p>
         </div>
