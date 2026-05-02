@@ -45,7 +45,6 @@ function renderCards(data, containerId, renderer) {
 
 // panggil component
 const components = [
-    { id: "navbar", file: "components/navbar.html" },
     { id: "footer", file: "components/footer.html" },
     { id: "hero", file: "components/hero.html" },
     { id: "customer-need", file: "components/customer-need.html" },
@@ -54,8 +53,8 @@ const components = [
     
     {
         id: "navbar", file: "components/navbar.html", onLoad: () => {
-            setActiveNav(),
-            initHamburger()
+            setActiveNav();
+            initHamburger();
         }
     },
 
