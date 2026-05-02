@@ -68,7 +68,7 @@ const components = [
 
     {
         id: "products",
-        file: "components/products.html",
+        file: "components/products-component.html",
         onLoad: () => {
             renderCards(product1, "product1-card-container", createCardProduct1);
             renderCards(product2, "product2-card-container", createCardProduct2);
