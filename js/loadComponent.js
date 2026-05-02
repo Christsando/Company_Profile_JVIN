@@ -30,6 +30,26 @@ function initHamburger() {
     });
 }
 
+// function initHamburger() {
+//     const menuBtn = document.getElementById("menu-btn");
+//     const mobileMenu = document.getElementById("mobile-menu");
+
+//     menuBtn.addEventListener("click", () => {
+//         const isOpen = mobileMenu.classList.toggle("hidden");
+
+//         menuBtn.querySelector("i").className = isOpen
+//             ? "fa fa-bars"
+//             : "fa fa-x";
+//     });
+
+//     mobileMenu.querySelectorAll("a").forEach(link => {
+//         link.addEventListener("click", () => {
+//             mobileMenu.classList.add("hidden");
+//             menuBtn.querySelector("i").className = "fa fa-bars";
+//         });
+//     });
+// }
+
 function renderCards(data, containerId, renderer) {
     const container = document.getElementById(containerId);
 
