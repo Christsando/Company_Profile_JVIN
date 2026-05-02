@@ -1,6 +1,9 @@
 # dependencies
 node_modules/
 
+# build output (Tailwind hasil compile)
+dist/
+
 # logs
 npm-debug.log*
 
