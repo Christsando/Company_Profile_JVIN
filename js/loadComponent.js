@@ -45,12 +45,47 @@ function renderCards(data, containerId, renderer) {
 
 // panggil component
 const components = [
-    { id: "footer", file: "components/footer.html" },
     { id: "hero", file: "components/hero.html" },
     { id: "customer-need", file: "components/customer-need.html" },
-    { id: "question", file: "components/question.html" },
     { id: "commitment", file: "components/commitment-card.html" },
     
+    {
+        id: "footer", 
+        file: "components/footer.html",
+                onLoad: () => {
+        const waContact = document.getElementById('wa-contact');
+        if (!waContact) return; // skip kalau element tidak ada di halaman ini
+
+        const message = `Halo CV Java Indo Nusantara!
+Saya ingin menanyakan informasi lebih lanjut mengenai produk Anda.
+
+Nama  : 
+Produk yang diminati : 
+Pertanyaan : `;
+
+        waContact.href = 'https://wa.me/6281234716262?text=' + encodeURIComponent(message);
+    }
+    },
+
+    {
+        id: "question",
+        file: "components/question.html",
+        onLoad: () => {
+        const waContact = document.getElementById('wa-contact');
+        if (!waContact) return; // skip kalau element tidak ada di halaman ini
+
+        const message = `Halo CV Java Indo Nusantara!
+Saya ingin menanyakan informasi lebih lanjut mengenai produk Anda.
+
+Nama  : 
+Produk yang diminati : 
+Pertanyaan : `;
+
+        waContact.href = 'https://wa.me/6281234716262?text=' + encodeURIComponent(message);
+    }
+
+    },
+
     {
         id: "navbar", file: "components/navbar.html", onLoad: () => {
             setActiveNav();
