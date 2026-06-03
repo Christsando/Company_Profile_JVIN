@@ -24,33 +24,26 @@ const charcoalProcess = [
 
 const packageProcess = [
     {
-        img: "../assets/images/production_and_mixing.png",
+        img: "../assets/images/packaging/inner_package.png",
         number: "01",
         title: "INNER",
         subtitle: "PACKAGING",
         color: "bg-emphasisColor"
     },
     {
-        img: "../assets/images/molding_process.png",
+        img: "../assets/images/packaging/outer_package.png",
         number: "02",
         title: "BOX",
         subtitle: "PACKAGING",
         color: "bg-neutralColor"
     },
     {
-        img: "../assets/images/drying_coal.png",
+        img: "../assets/images/packaging/loading.png",
         number: "03",
-        title: "MASTER",
-        subtitle: "CARTON",
+        title: "TRUCK",
+        subtitle: "LOADING",
         color: "bg-overlayHero"
     },
-    {
-        img: "../assets/images/drying_coal.png",
-        number: "04",
-        title: "CONTAINER",
-        subtitle: "LOADING",
-        color: "bg-important"
-    }
 ];
 
 const product1 = [{
